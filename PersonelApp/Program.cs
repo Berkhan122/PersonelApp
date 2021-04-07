@@ -28,7 +28,7 @@ namespace PersonelApp
         public string persadi;
         public string perssoyadi;
         public int giristarihi;
-        double maas = 1000.0f;
+        double maas = 1000.00;
         double katsayi = 0.8f;
 
 
@@ -41,7 +41,7 @@ namespace PersonelApp
 
         public string PersonelBilgileri()
         {
-            return $"Personel Adı:{this.persadi}\nPersonel Soyadı:{this.perssoyadi}\nGiriş Yılı:{this.giristarihi}\nMaaş:{this.MaasHesap()}\n-----------------";
+            return $"Personel Adı:{this.persadi}\nPersonel Soyadı:{this.perssoyadi}\nGiriş Yılı:{this.giristarihi}\nMaaş:{this.MaasHesap().ToString("C2")}\n-----------------";
         }
     }
 }
